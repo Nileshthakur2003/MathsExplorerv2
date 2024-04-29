@@ -1,9 +1,11 @@
-import { useState } from 'react'
+///import { useState } from 'react'
 import './App.css'
-import {ImageBox, MEHeadingText, MainCard, SearchBox } from './CustomComponents'
-import {MathComponent} from './Pages/core/MathJaxComponents';
+import { MEHeadingText, MainCard, SearchBox } from './CustomComponents'
+//import {MathComponent} from './Pages/core/MathJaxComponents';
+
+
+
 function HomeCode() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

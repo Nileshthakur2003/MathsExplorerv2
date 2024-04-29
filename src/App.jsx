@@ -1,7 +1,10 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import './App.css'
-import {ImageBox, MEHeadingText, MainCard, SearchBox } from './CustomComponents'
-import {MathComponent} from './Pages/core/MathJaxComponents';
+import React from 'react';
+//import ReactDOM from 'react-dom';
+
+//import {ImageBox, MEHeadingText, MainCard, SearchBox } from './CustomComponents'
+//import {MathComponent} from './Pages/core/MathJaxComponents';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import About from './Pages/About';
 import LinearAlgebra from './Pages/core/linearAlgebra';
@@ -19,6 +22,7 @@ function App() {
 
   return (
     <>
+    <div className='App'>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<HomeCode/>}></Route>
@@ -30,7 +34,8 @@ function App() {
       <Route path='/core/linearAlgebra/sle' element={<LinearAlgebraSLE/>}></Route>
     </Routes>
     </BrowserRouter>
-
+    </div>
+    
     </>
   )
 }
